@@ -1,0 +1,9 @@
+{
+  "cond": {
+    "attr": "current_price",
+    "comp": ">=",
+    "target": 40000
+  },
+  "item_name": "bitcoin",
+  "item_type": "token"
+}

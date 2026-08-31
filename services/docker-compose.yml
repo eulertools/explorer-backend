@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+  cache:
+    container_name: worker-cache
+    image: redis
+  worker:
+    container_name: dgw
+    build:
+      context: .
+    ports:
+      - 3030:3030

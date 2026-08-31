@@ -1,0 +1,93 @@
+{
+  "sections":{
+    "marketplace":{
+      "create":{
+        "value" : 270000,
+        "method": [
+          {
+            "inputs": [
+              {
+                "internalType": "uint32",
+                "name": "kind",
+                "type": "uint32"
+              },
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              }
+            ],
+            "name": "getCreateFees",
+            "outputs": [
+              {
+                "internalType": "uint112",
+                "name": "fees",
+                "type": "uint112"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ]
+      },
+      "buy":{
+        "value" : 265000,
+        "method": [
+          {
+            "inputs": [
+              {
+                "internalType": "uint32",
+                "name": "kind",
+                "type": "uint32"
+              },
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              }
+            ],
+            "name": "getBuyFees",
+            "outputs": [
+              {
+                "internalType": "uint112",
+                "name": "fees",
+                "type": "uint112"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ]
+      },
+      "claim":{
+        "value" : 200000,
+        "method": [
+          {
+            "inputs": [
+              {
+                "internalType": "uint32",
+                "name": "kind",
+                "type": "uint32"
+              },
+              {
+                "internalType": "address",
+                "name": "account",
+                "type": "address"
+              }
+            ],
+            "name": "getClaimFees",
+            "outputs": [
+              {
+                "internalType": "uint112",
+                "name": "fees",
+                "type": "uint112"
+              }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "host": "localhost",
+  "port": "PORT",
+  "testPort": "PORT",
+  "public": "../public/",
+  "paginate": {
+    "default": 10,
+    "max": 50
+  },
+  "postgres": {
+    "dialect": "postgres",
+    "define": {
+      "freezeTableName": true,
+      "timestamps": false
+    },
+    "logging": false,
+    "dialectOptions": {
+      "connectTimeout": 35000,
+      "application_name": "data-gateway",
+      "schema": "raw",
+      "prependSearchPath": false,
+      "supportsSearchPath": true,
+      "searchPath": "raw",
+      "ssl": {
+        "require": true,
+        "rejectUnauthorized": false
+      },
+      "statement_timeout": 60000,
+      "idle_in_transaction_session_timeout": 120000
+    },
+    "replication": {
+      "read": [
+        {
+          "host": "DB_HOST",
+          "database": "mainnet",
+          "username": "postgres",
+          "password": "POSTGRES_PASSWORD",
+          "port": 5432
+        }
+      ],
+      "write": {
+        "host": "DB_HOST",
+        "database": "mainnet",
+        "username": "postgres",
+        "password": "POSTGRES_PASSWORD",
+        "port": 5432
+      }
+    },
+    "pool": {
+      "max": 10,
+      "min": 5,
+      "acquire": 10000,
+      "idle": 10000,
+      "evict": 10000
+    },
+    "retry": {
+      "match": [
+        "/SequelizeConnectionError/",
+        "/SequelizeConnectionRefusedError/",
+        "/SequelizeHostNotFoundError/",
+        "/SequelizeHostNotReachableError/",
+        "/SequelizeInvalidConnectionError/",
+        "/SequelizeConnectionTimedOutError/",
+        "/SequelizeConnectionAcquireTimeoutError/"
+      ],
+      "max": 1000000
+    }
+  },
+  "elasticsearch": "ES_DOMAIN",
+  "elasticsearch_username": "ES_USER",
+  "elasticsearch_password": "ES_PASS",
+  "es_index": "ES_INDEX",
+  "new_index": "NEW_INDEX",
+  "new_elasticsearch": "NEW_ELASTICSEARCH",
+  "aws_config": {
+    "region": "AWS_REGION",
+    "accountId": "AWS_ACCOUNT_ID"
+  },
+  "chain_id": "CHAIN_ID",
+  "dynamodb": {
+    "tables": {
+      "userEntities": "DDB_USER_ENTITIES",
+      "userProfiles": "DDB_USER_PROFILES",
+      "userNotifications": "DDB_USER_NOTIFICATIONS",
+      "userVotes": "DDB_USER_VOTES",
+      "userSubscriptions": "DDB_USER_SUBSCRIPTIONS",
+      "subscriptionsSettingsTable": "DDB_SUBSCRIPTION_SETTINGS",
+      "catalog": "DDB_CATALOG"
+    }
+  },
+  "web3": {
+    "poolsNode": "POOLS_NODE"
+  },
+  "authentication": {
+    "cognito": {
+      "tokenUse": "id",
+      "tokenExpiration": 3600000,
+      "userPoolId": "AWS_COGNITO_IDENTITY_POOL_ID",
+      "region": "AWS_REGION"
+    }
+  },
+  "external": {
+    "twitter": {
+      "apiKey": "TWITTER_API_KEY"
+    }
+  },
+  "kinesis": {
+    "bscTransactionsStream": "KINESIS_BSC_TRANSACTIONS_STREAM"
+  },
+  "redis": {
+    "endpoint": "REDIS_ENDPOINT",
+    "port": "REDIS_PORT",
+    "zone": "REDIS_ZONE"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "LPBalance": 316.607299794753,
+  "poolAddress": "0x09907AA171cD131Eba5AcbAEEC4991d66A21294F",
+  "price": 0.000141019775824059,
+  "token1": {
+    "address": "0x3920123482070C1a2dff73AaD695c60e7c6F6862",
+    "balance": 45064.911464265664
+  },
+  "token2": {
+    "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c",
+    "balance": 6.355043712221811
+  }
+}

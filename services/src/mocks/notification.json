@@ -1,0 +1,7 @@
+{
+  "item_msg": {
+    "test": true
+  },
+  "item_ref": "alert~some",
+  "item_type": "token"
+}

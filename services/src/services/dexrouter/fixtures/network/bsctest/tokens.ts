@@ -1,0 +1,7 @@
+export const tokens = [
+  "0xae13d989dac2f0debff460ac112a837c89baa7cd",
+  "0x7ef95a0fee0dd31b22626fa2e10ee6a223f8a684",
+  "0x8babbb98678facc7342735486c851abd7a0d17ca",
+  "0x78867bbeef44f2326bf8ddd1941a4439382ef2a7",
+  "0x8a9424745056eb399fd19a0ec26a14316684e274"
+];

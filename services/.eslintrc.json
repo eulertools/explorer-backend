@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": ["plugin:@typescript-eslint/recommended", "prettier"],
+  "ignorePatterns": ["lib/**/*.js"],
+  "rules": {
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/comma-dangle": "off",
+    "import/prefer-default-export": "off",
+    "implicit-arrow-linebreak": "off",
+    "function-paren-newline": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "comma-dangle": "off",
+    "linebreak-style": "off",
+    "no-param-reassign": "off", // slices
+    "no-underscore-dangle": "off",
+    "@typescript-eslint/naming-convention": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
