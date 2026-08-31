@@ -61,7 +61,7 @@
     "@feathersjs/errors": "^4.5.11",
     "@feathersjs/express": "^4.5.11",
     "@feathersjs/feathers": "^4.5.11",
-    "@feathersjs/socketio": "^4.5.11",
+    "@feathersjs/socketio": "^5.0.49",
     "@feathersjs/transport-commons": "^4.5.11",
     "@giuseppecampanelli/medium-api": "^1.0.0",
     "@hapi/joi": "^15.1.1",
