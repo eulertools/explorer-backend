@@ -48,9 +48,9 @@
   },
   "types": "lib/",
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.15.0",
-    "@aws-sdk/client-kinesis": "^3.18.0",
-    "@aws-sdk/client-sqs": "^3.18.0",
+    "@aws-sdk/client-dynamodb": "^3.1166.0",
+    "@aws-sdk/client-kinesis": "^3.1166.0",
+    "@aws-sdk/client-sqs": "^3.1166.0",
     "@aws-sdk/credential-provider-ini": "^3.13.1",
     "@aws-sdk/credential-provider-sso": "^3.13.1",
     "@aws-sdk/node-http-handler": "^3.13.1",
